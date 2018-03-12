@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="framework/bootstrap/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="icon/iconfont.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <style>
+    </style>
+    <script>
+        // 移动端跳转
+        var OS = function() {
+            var a = navigator.userAgent,
+                b = /(?:Android)/.test(a),
+                d = /(?:Firefox)/.test(a),
+                e = /(?:Mobile)/.test(a),
+                f = b && e,
+                g = b && !f,
+                c = /(?:iPad.*OS)/.test(a),
+                h = !c && /(?:iPhone\sOS)/.test(a),
+                k = c || g || /(?:PlayBook)/.test(a) || d && /(?:Tablet)/.test(a),
+                a = !k && (b || h || /(?:(webOS|hpwOS)[\s\/]|BlackBerry.*Version\/|BB10.*Version\/|CriOS\/)/.test(a) || d && e);
+            return {
+                android: b,
+                androidPad: g,
+                androidPhone: f,
+                ipad: c,
+                iphone: h,
+                tablet: k,
+                phone: a
+            }
+        }();
+        if (OS.phone || OS.ipad) {
+        } else {
+            location.href = 'https://www.rulaiyun.net/'/*tpa=http://tim.qq.com/mobile/index.html?adtag=index*/;
+        }
+    </script>
+</head>
+<body>
+<!--页面从上到下，分别分为section1,section2,....section10部分-->
+<div class="box">
+    <div class="menu-content">
+        <div class="logo-box">
+            <img src="images/logo1.png"/>
+        </div>
+        <div class="row">
+            <div>
+                <a>首页</a></div>
+            <div>
+                <a>使用</a>
+            </div>
+            <div>
+                <a>支持</a>
+            </div>
+        </div>
+    </div>
+    <div class="menu"></div>
+    <div class="common-header">
+        <div class="pull-left">
+            <img src="images/logo1.png"/>
+        </div>
+    </div>
+    <div class="section1">
+        <div class="logo-box">
+            <img src="images/logo.png" class="img-responsive logo"/>
+        </div>
+        <div class="content-box">
+            <h1>如来云网络运营平台<span class="label label-default">2.0</span></h1>
+            <p>只需免费注册一个运营平台账号，即可轻松部署</p>
+            <p>无线运营方案，深度合作的MikroTik、Soarnex设备</p>
+            <p>可供选择，保障运营者的投入性价比。</p>
+        </div>
+        <div class="button-box">
+            <button>开始使用</button>
+        </div>
+        <div class="img-box">
+            <img src="images/section1_1.jpg" class="img-responsive"/>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="row">
+            <div class="col-xs-4">
+                <h1 class="counter">79,000</h1>
+                <p>累计用户数量</p>
+            </div>
+            <div class="col-xs-4 row-div-2">
+                <div class="border-box">
+                </div>
+                <h1 class="counter">68,000</h1>
+                <p>在线设备数量</p>
+            </div>
+            <div class="col-xs-4">
+                <h1 class="counter">103,000</h1>
+                <p>接入场所数量</p>
+            </div>
+        </div>
+    </div>
+    <div class="section3">
+        <h1>网络运营的难点</h1>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="icon-box col-xs-3">
+                    <i class="iconfont icon-wangluoguzhang"></i>
+                </div>
+                <div class="col-xs-9">
+                    <p>网络故障排查难</p>
+                    <div class="content-p">
+                        <p>故障点模糊问题不清晰，如来云平台，比客户反映更早，更精确，可视化位置、状态问题展现。直达障点</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xs-12">
+                <div class="icon-box col-xs-3">
+                    <i class="iconfont icon-fuwushouquan"></i>
+                </div>
+                <div class="col-xs-9">
+                    <p>认证服务搭建难</p>
+                    <div class="content-p">
+                        <p>保姆式接入支持零收费，客户收益共进共 赢。专家设计架构WiFi经验，拥有专业自 主的开发团队、到场支持。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+
+                <div class="icon-box col-xs-3">
+                    <i class="iconfont icon-hudongtiyansheji"></i>
+                </div>
+                <div class="col-xs-9">
+                    <p>用户体验难满足</p>
+                    <div class="content-p">
+                        <p>定制营销方案，运营商自动融合、随充随 用。消费无需任何引导。24小时客服，现场指导设备远程报警，客户投诉率降低。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="icon-box col-xs-3">
+                    <i class="iconfont icon-erji-jiliangjifei"></i>
+                </div>
+                <div class="col-xs-9">
+                    <p>计费方式比较固化</p>
+                    <div class="content-p">
+                        <p>每场所自主设定当地套餐资费可分流量、时长两种方式，自动判断折扣用户规则，任务提取，支付、 统计可视感强。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section4">
+        <h1>智能人性化的产品类别分析</h1>
+        <div class="row nav">
+            <div class="col-xs-4">
+                <a>上网认证</a>
+            </div>
+            <div class="col-xs-4">
+                <a>运营平台</a>
+            </div>
+            <div class="col-xs-4">
+                <a>兼容更多产品</a>
+            </div>
+        </div>
+        <div class="row content">
+            <div class="item-content">
+                <h2>上网认证</h2>
+                <p>基于标准Radius实现，兼容国内外主流设备厂商认证协议</p>
+                <p>上网计费、微信、手机号、会员卡，满足你多变的业务需要。</p>
+                <div class="img-box">
+                    <div class="img-box-1"></div>
+                    <div class="img-box-2"></div>
+                </div>
+            </div>
+            <div class="item-content hide">
+                <h2>上网认证2</h2>
+                <p>基于标准Radius实现，兼容国内外主流设备厂商认证协议</p>
+                <p>上网计费、微信、手机号、会员卡，满足你多变的业务需要。</p>
+                <div class="img-box">
+                    <div class="img-box-1"></div>
+                    <div class="img-box-2"></div>
+                </div>
+            </div>
+            <div class="item-content hide">
+                <h2>上网认证3</h2>
+                <p>基于标准Radius实现，兼容国内外主流设备厂商认证协议</p>
+                <p>上网计费、微信、手机号、会员卡，满足你多变的业务需要。</p>
+                <div class="img-box">
+                    <div class="img-box-1"></div>
+                    <div class="img-box-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section5">
+        <h1>智能人性化的产品类别分析</h1>
+        <div class="row">
+            <div class="col-xs-2">
+                <div class="icon-box">
+                    <i class="iconfont icon-star1 "></i>
+                </div>
+            </div>
+            <div class="col-xs-10">
+                <h1>高效的运营管理</h1>
+                <p>管理平台悉数呈现多方设备及运营数据，支持多角色协同,统一管理所有的业务和账务数据多纬度分析业务运营数据与网络设备状态。</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2">
+                <div class="icon-box">
+                    <i class="iconfont icon-star1 icon-border">
+
+                    </i>
+
+                </div>
+                <div class="border-box border-box1"></div>
+                <div class="border-box border-box2"></div>
+            </div>
+            <div class="col-xs-10">
+                <h1>强大的技术能力</h1>
+                <p>行业一流的团队提供便捷、稳定和安全的技术服务。全平台极致的用户体验及易用性，你无需专门建立， 技术团队也可搭建稳定高效的运营系。</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2">
+                <div class="icon-box">
+                    <i class="iconfont icon-star1 "></i>
+                </div>
+            </div>
+            <div class="col-xs-10">
+                <h1>专业的全流程服务</h1>
+                <p class="text-left">方案专家全程跟进定制化业务需求。客户设备接入、接口联调、测试上线到后期系统运维、管理平台使用等各方向全面提供 7*10 小。</p>
+            </div>
+        </div>
+    </div>
+    <div class="section6">
+        <div class="row row1">
+            <!--<div class="img-box">-->
+            <!--<img src="images/section6-banner.png" class="img-responsive"/>-->
+            <!--</div>-->
+            <div class="content">
+                <div class="col-xs-5 content-first">
+                    <img src="images/section9.png" class="img-responsive"/>
+                </div>
+                <div class="col-xs-7 content-second">
+                    <div>
+                        <h5>如来云，让您的网络运营更便捷</h5>
+                        <button>了解如来云智能好帮手</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row2">
+            <div class="content">
+                <h1>最新动态</h1>
+                <p>我们将持续关注行业最新技术及商机</p>
+                <div class="row row3 ">
+                    <div class="col-xs-6">
+                        <img src="images/section6-3.png" class="img-responsive"/>
+                    </div>
+                    <div class="col-xs-6 text-left">
+                        <p class="first-p">2017/10/27</p>
+                        <h5>发放时间发货</h5>
+                        <p class="second-p">了肯定觉得，及相关，简单的设计方式 独守空房了是的看法对方手机能发顺丰...</p>
+                        <div class="first-div text-left">
+                            <i class="glyphicon glyphicon-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row3">
+                    <div class="col-xs-6 text-right">
+                        <p class="first-p">2017/10/27</p>
+                        <h5>发放时间发货</h5>
+                        <p class="second-p">了肯定觉得，及相关，简单的设计方式 独守空房了是的看法对方手机能发顺丰...</p>
+                        <div class="first-div text-right">
+                            <i class="glyphicon glyphicon-arrow-left"></i>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <img src="images/section6-4.png" class="img-responsive"/>
+                    </div>
+
+                </div>
+                <div class="row row3">
+                    <div class="col-xs-6">
+                        <img src="images/section6-5.png" class="img-responsive"/>
+                    </div>
+                    <div class="col-xs-6 text-left">
+                        <p class="first-p">2017/10/27</p>
+                        <h5>发放时间发货</h5>
+                        <p class="second-p">了肯定觉得，及相关，简单的设计方式 独守空房了是的看法对方手机能发顺丰...</p>
+                        <div class="first-div text-left">
+                            <i class="glyphicon glyphicon-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section7">
+        <h1>战略合作伙伴</h1>
+        <p>行业明星团队，专注无线网络10余年的行业大咖加盟，历经 4 年积累打造专业的网 络设备运营智能平台，历经 73 个版本迭代升级，服务 20 多个品牌网络设备厂商，近200 家企业及运营者客户，处理超过 1
+            亿笔订单及2万台在线网络设备的管理。</p>
+        <div class="row">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/section7_1.jpg" class="img-responsive" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="images/section7_1.jpg" class="img-responsive" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="images/section7_1.jpg" class="img-responsive" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="images/section7_1.jpg" class="img-responsive" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section8">
+        <h1>有兴趣？来找我吧!</h1>
+        <p>设备厂商对接、厂园及大中专院校资</p>
+        <p>源对接、网络覆盖目合作。</p>
+        <div class="row row1">
+            <div class="col-xs-4">
+                <div class="padding-box">
+                    <div class="icon-box">
+                        <i class="iconfont icon-weizhi"></i>
+                    </div>
+                    <div class="content-box">
+                        <h5>公司地址</h5>
+                        <p>安徽合肥包河区互联网产业园8栋3层</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4 section8-middle-div">
+                <div class="padding-box">
+                    <div class="icon-box">
+                        <i class="iconfont icon-dianhua2"></i>
+                        <div class="icon-border"></div>
+                    </div>
+                    <div class="content-box">
+                        <h5>联系电话</h5>
+                        <p>+86-551-85200200</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="padding-box">
+                    <div class="icon-box">
+                        <i class="iconfont icon-youxiang"></i>
+                    </div>
+                    <div class="content-box">
+                        <h5>电子邮箱</h5>
+                        <p>server@rulaiyun.net </p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row2">
+            <div class="col-xs-6">
+                <div>
+                    <span>你的姓名</span>
+                    <input type="text"/>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div>
+                    <span>联系方式</span>
+                    <input type="tel"/>
+                </div>
+            </div>
+
+        </div>
+        <div class="row row3">
+            <div class="col-xs-12 text-left">
+                <div>
+                    <span>电子邮箱</span>
+                    <input type="emali"/>
+                </div>
+            </div>
+            <div class="col-xs-12 text-left">
+                <div>
+                    <span>留言内容</span>
+                    <input type="text"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section9">
+        <div class="img-box">
+            <img src="images/section9.png" class="img-responsive"/>
+        </div>
+        <div class="nav">
+            <a> 产品介绍&nbsp;&nbsp;</a>
+            <a>| &nbsp; 关于我们&nbsp; </a>
+            <a>| &nbsp; 合作伙伴&nbsp; </a>
+            <a>| &nbsp;联系我们 </a>
+
+        </div>
+        <div class="bottom">
+            ©2018 Rulaiyun All Rights Reserved 皖ICP备18002257号-1
+        </div>
+    </div>
+</div>
+<script src="framework/jquery/dist/jquery.min.js"></script>
+<script src="framework/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="js/jquery.countup.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
