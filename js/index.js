@@ -2,6 +2,7 @@ $(function(){
     $('.counter').countUp();
     $(".section1").addClass('show');
     var index = 0;
+    //导航栏轮播
     var timer =  setInterval(function(){
         if(index<2){
             index++;
@@ -18,6 +19,7 @@ $(function(){
         $(".section4 .item-content").eq(index).removeClass('hide').siblings().addClass('hide');
 
     },3000);
+    //点击导航栏，清楚定时器，切换到不同的导航栏
     $(".section4 .nav a").click(function(){
 
         clearInterval(timer);
@@ -27,6 +29,7 @@ $(function(){
         $(".section4 .item-content").eq(index).removeClass('hide').siblings().addClass('hide');
     });
 })
+//鼠标下滑动画
 $(document).scroll( function() {
     var top = $(document).scrollTop();
     if(top===0){
@@ -38,6 +41,7 @@ $(document).scroll( function() {
     }
 
 });
+//显示隐藏菜单栏
 $(".menu").click(function(){
     if($(this).hasClass('open')) {
         $(this).removeClass('open');
